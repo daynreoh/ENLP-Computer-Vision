@@ -1,0 +1,17 @@
+body {
+    background-color: lightcyan;
+}
+
+.col #self-image{ 
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    width: 600px;
+}
+
+#about {
+    padding-top: 200px;
+    text-align: center;
+}
+
