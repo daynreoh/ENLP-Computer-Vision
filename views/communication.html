@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Communication Phase</title>
+    <title>Communication</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="navbar.html">
     <script src="https://kit.fontawesome.com/266a1999b4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../resources/css/hobbies.css">
+    <link rel="stylesheet" href="../resources/css/communication.css">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark", id="navbar">
       <div class="container-fluid">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" color="white" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="hobbies.html">Hobbies</a>
+              <a class="nav-link active" aria-current="page" color="white" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
@@ -23,64 +20,189 @@
               <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
             </li>
           </ul>
-          <img src="../resources/img/rocket_icon.png" width="60px">
         </div>
       </div>
   </nav>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <h1 id="hobbies-title">Navigating Privacy: Tesla's Approach to Personal Data in Fully Self-Driving Development</h1>
-    <div class="container">
+    <h1 id="title">Navigating Privacy: Tesla's Approach to Personal Data in Fully Self-Driving Development</h1>
+    <h2>by Dayn Reoh</h2>
+    <div class="essay">
       <div class="row">
-        <div class="col" id="hobby-card-1">
-          <img src="../resources/img/concert.png" alt="Me at a concert" id="image1">
-          <h4>Live Music</h4>
           <p>
-            As more vehicle owners adopt Tesla's Fully Self-Driving1 (FSD) software, the company is leveraging an increasingly large collection 
-            of data from its vehicle fleet2 to create a safer and more effective self-driving experience. However, many customers remain unaware 
+            As more vehicle owners adopt Tesla's Fully Self-Driving<sup><a href="#e1">1</a></sup> (FSD) software, the company is leveraging an increasingly large collection 
+            of data from its vehicle fleet<sup><a href="#e2">2</a></sup> to create a safer and more effective self-driving experience. However, many customers remain unaware 
             of the extent of personal and potentially invasive information collected by their vehicles for this advancement.
           </p>
-        </div>
-        <div class="col" id="hobby-card-2">
-          <img src="../resources/img/girlfriend.png" alt="My girlfriend and I in Hawaii" id="image2">
-          <h4>Travel with my Girlfriend</h4>
           <p>
-            My girlfriend and I have travelled all across North America. Our favorite places have been Whister Canada, Princess Louisa
-            Inlet, British Columbia, Los Cabos, Mexico, and Maui, Hawaii. Her and I both love exploring new cultures and experiencing
-            the beautiful scenary.
+            It's important for Tesla car owners to be informed about the specific personal data their vehicles are gathering, as this directly 
+            enhances the performance of the FSD software. Almost all vehicle and Autopilot data collected from a Tesla car is unique to the owner, 
+            encompassing detailed information about their driving patterns and preferences. This data is recorded in the gateway log file<sup><a href="#e3">3</a></sup> each time 
+            the car is driven, and is retrieved by Tesla everytime the car connects to Wi-Fi.
           </p>
-        </div>
-        <div class="col" id="hobby-card-3">
-          <img src="../resources/img/snowboard.png" alt="Me snowboarding" id="image3">
-          <h4>Snowboarding</h4>
+          <p style="margin-bottom: 5px;">
+            Examples of personal information in Tesla’s collected data:<sup><a href="#e4">4</a></sup>
+            <ul class="lists">
+              <li>Permanent vehicle location tracking: House, work, school, frequently visited areas, and charging stations.</li>
+              <li>Pictures and videos of the environment surrounding the car: Garage, neighborhood, city buildings, and house.</li>
+              <li>Driving tendencies: Vehicle speed, time-stamped usage, braking metrics, and component signaling.</li>
+            </ul>
+          </p>
           <p>
-            I have been a snowboarder for the past 10 years, and I love it so much. Thrill seeking adventures such as 
-            snowboarding, skydiving, and surfing give me excitement and passion. Since being in Colorado I have visited 
-            Copper, Winter Park, and Arapahoe Basin.
+            Tesla claims to disassociate all vehicle data from the respective owners’ identity to anonymize data collection.<sup><a href="#e5">5</a></sup> 
+            Everytime the car sends information, Tesla either replaces the Vehicle’s Identification Number (VIN) with a randomly generated 
+            ID number or encrypts the data. These measures aim to remove a customer’s identity from their vehicle data.<sup><a href="#e6">6</a></sup> However, removing 
+            the VIN does not disassociate frequently visited locations and their respective video recordings, allowing this information to 
+            be linked together and traced back to the owner via data pattern matching.<sup><a href="#e7">7</a>, <a href="#e8">8</a></sup> Tesla employees reportedly shared sensitive customer 
+            car recordings, undermining their claims of data anonymity and privacy.<sup><a href="#e9">9</a></sup>
           </p>
-        </div>
+          <p>
+            Tesla has curated the most diverse and accurate perception of the world’s driving landscape, leveraging the personalized information 
+            collected from its extensive global vehicle fleet. As the number of Tesla cars on the road increases, so does the size and diversity of 
+            their dataset, directly enhancing FSD performance improvement efforts. Without access to customer data, the driving landscape would be 
+            far less representative, leading to an untrustworthy and error-prone product. 
+          </p>
+          <p>
+            The FSD model improves each of its components through a data engine workflow.<sup><a href="#e10">10</a></sup> Tesla researchers analyze each component’s performance 
+            using specific data collected from the vehicle fleet. When performance errors arise, researchers first diagnose and resolve these issues, 
+            then integrate their solutions into the data engine. Each component learns from its previous mistakes, iteratively improving accuracy and 
+            consistency as more data is collected.
+          </p>
+          <img class="image" src="../resources/img/data-engine-workflow.webp" alt="Data Engine Workflow">
+          <p style="margin-bottom: 5px;">
+            Principal components of Tesla’s FSD and Autopilot software:<sup><a href="#e11">11</a></sup>
+            <ol class="lists">
+              <li>Object Detection: Uses video recordings from cameras and sensors around the car to detect surrounding objects in real 
+                time. The precision of its detection is crucial for making safe and effective driving decisions. Tesla actively mines the 
+                fleet data to identify and incorporate rare or unknown objects into the data engine.</li>
+                <img class="image" src="../resources/img/object-detection.jpeg" alt="Tesla Object Detection">
+              <li>Prediction: Allows the car to forecast actions and movements of objects surrounding it before they occur. Accurate 
+                prediction of nearby road users' movements enhances driver safety. Tesla tracks incorrect predictions. A comprehensive 
+                method evaluates the significance of an error and the extent of deviation between the prediction and result. Significant 
+                deviations prompt human expert review for potential software issues.</li>
+                <img class="image" src="../resources/img/prediction.jpeg" alt="Tesla Prediction">
+              <li>Path Planning: Uses prediction and object detection information to make the safest and most pleasant driving decisions. 
+                These decisions are made using imitation learning.<sup><a href="#e12">12</a></sup>
+                <ul>
+                  <li>Examples are: staying in the lane, following the speed limit, overtaking a car, making turns, and stopping at a light.</li>
+                </ul>
+              </li>
+            </ol>
+
+          </p>
+          <p>
+            Waymo, another leading innovator in the self-driving car industry, differs from Tesla in its business model and scope. 
+            Waymo's self-driving cars are used for ride-sharing services and are not available for individual ownership. They currently 
+            only operate in Arizona, California, and Texas. Waymos’ smaller vehicle fleet<sup><a href="#e13">13</a></sup> and restricted operational areas limit its data 
+            collection compared to Tesla.
+          </p>
+          <p style="margin-bottom: 5px;">
+            Tesla’s advantages over Waymo: 
+            <ol class="lists">
+              <li>Their driving landscape and world perception is more diverse, complete, and high quality due to their data collection 
+                practices.</li>
+              <li>Tesla simulates<sup><a href="#e14">14</a></sup> a wide range of complex driving scenarios, each with unique challenges, to generate new training data, 
+                while Waymo relies on data augmentation<sup><a href="#e15">15</a></sup> to create variations of their existing training data. </li>
+            </ol>
+          </p>
+          <p>
+            However, Waymo provides more safety and transparency about its self-driving technology and data than Tesla, making them a 
+            strong competitor and trustworthy company. Unlike Tesla, which rapidly extended its self-driving features worldwide, Waymo 
+            is adopting a more cautious approach. They are developing high-quality self-driving functionality by focusing on perfecting 
+            their technology in a few locations before expanding business globally. 
+          </p>
+          <p style="margin-bottom: 5px;">
+            Waymo’s advantages over Tesla: 
+            <ol class="lists">
+              <li>Their entire vehicle fleet dataset is open-sourced, providing transparency to, and receiving feedback from, 
+                the public.<sup><a href="#e16">16</a></sup> </li>
+              <li>Waymo uses three dimensions of vision for perception tracking around their car: Lidar,<sup><a href="#e17">17</a></sup> camera recordings, 
+                and radar.<sup><a href="#e18">18</a></sup> Tesla only uses camera recordings.</li>
+              <li>They simulate all self-driving functionality through environments that represent real world locations they operate in, 
+                optimizing passenger safety.</li>
+            </ol>
+          </p>
+          <p>
+            Currently, Tesla holds a competitive edge in this market due to its expansive and diverse dataset, enabling its vehicles to 
+            operate in a wide range of environments. However, this advantage comes with significant privacy concerns. Tesla's approach to 
+            data collection raises questions about their ethical use of customer data, deteriorating customer trust. As Waymo expands 
+            services beyond America, their commitment to transparency and safety could foster customer trust, giving them the ability to 
+            shape the future of autonomous driving.
+          </p>
+          <p>
+            In conclusion, Tesla's approach to data collection, while technologically beneficial, is dangerous. Their use of personal data 
+            has accelerated their FSD capabilities, offering significant advantages to customers. However, Tesla’s careless handling of 
+            customer data raises concerns about the ethical dimensions of their operations. Tesla now faces a critical juncture: to maintain 
+            its leadership and reputation, it must not only continue innovating but also evolve its approach to data ethics. The future of 
+            the self-driving car industry will likely be shaped by companies that can advance technologically while simultaneously building 
+            and maintaining customer trust. As other companies gain access to similar volumes of data as Tesla, the competitive edge will 
+            emerge from a balance of responsible data stewardship and safe technological advancement.
+          </p>
       </div>
     </div>
+    <h1 style="text-align: center;">Endnotes</h1>
+    <div class="endnotes">
+      <ol>
+        <li class="endnote" id="e1">Tesla’s most advanced release of their Autopilot driver assistance system. The Fully Self-Driving model takes the car almost 
+          anywhere with little driver assistance. Owners are required to supervise its functions (“Autopilot and Full Self-Driving 
+          Capability | Tesla Support.”, 2023).</li>
+        <li class="endnote" id="e2">The term "vehicle fleet" refers to the aggregate of Tesla vehicles globally in operation that transmit vehicle data back to 
+          Tesla's data centers for analysis and improvement of their systems.</li>
+        <li class="endnote" id="e3">The gateway log file exists on a 4GB SD card within the Media Control Unit (MCU) of a Tesla car. It is responsible for storing 
+          permanent records of vehicle data, including: event data recorders, whether the driver had their hands on the wheel, and seatbelt, 
+          Autopilot, and cruise control settings (“The Radical Scope of Tesla’s Data Hoard - IEEE Spectrum.”, 2022).</li>
+        <li class="endnote" id="e4">This information originated from a Tesla owner that tweets under the pseudonym GreentheOnly. He independently studies Tesla’s 
+          data collection process through the use of salvaged Tesla vehicles and components, displaying his findings on Twitter. In 2019, Green posted 
+          a technical analysis of upcoming Autopilot hardware and software updates to Twitter. Elon Musk was tagged in the tweet and 
+          responded with, “The analysis was mostly correct, this Reddit user is hardcore. They should interview at Tesla”. Elon’s validation of 
+          Green’s analysis proves he is a strong source in this context (“Green (@greentheonly) / X.”, 2022; Clifford, 2019).</li>
+        <li class="endnote" id="e5">“We clearly define the vehicle data which we collect and don’t collect. Tesla does not link your location with your account or 
+          identity, or keep a history of where you’ve been” (Tesla, “Privacy Notice.”, 2023).</li>
+        <li class="endnote" id="e6">For situations that grant Tesla access to a customer’s non-anonymized data, refer to Tesla's guidelines in the 'When You Are a 
+          Tesla Customer' section (Tesla, “Privacy Notice.”, 2023).</li>
+        <li class="endnote" id="e7">“it is extraordinarily difficult to de-identify massive amounts of historic data once it is individualized with chronicled 
+          location information like a person’s home, workplace, and habits” (John Verdi, 2022).</li>
+        <li class="endnote" id="e8">John Verdi is a Senior Vice President of the Future of Privacy Forum. Before this, he was the Director of Privacy 
+          Initiatives at the National Telecommunications and Information Administration where he crafted policy recommendations for the 
+          US Department of Commerce and President Obama (John Verdi, 2022). Due to this, he is an expert in the privacy field and a strong 
+          source. </li>
+        <li class="endnote" id="e9">From 2019 to 2022, anonymous interviews with former Tesla employees revealed the internal circulation of invasive videos 
+          containing private customer data from Tesla's vehicle fleet. One video captured a customer approaching his vehicle completely 
+          naked. Another video showed a driver hitting a child at high speed in a residential area. Seven former employees reported that 
+          various Tesla computer programs could show the locations of car recordings, potentially revealing where a Tesla owner lived. Three 
+          years ago, employees found recorded footage from a Tesla’s cameras inside someone’s parked garage that captured a unique submersible 
+          vehicle. Tracing the vehicle back to the 1977 James Bond movie, employees were able to identify the current owner of the unique car, 
+          therefore reverse engineering the Tesla owner’s identity. It was Elon Musk (Stecklow et al., 2023).</li>
+        <li class="endnote" id="e10">A data engine is a process for finding, sorting, indexing, and storing informative data in a workflow. They provide experts 
+          with specific problem cases identified from the outputs of machine learning models in production. Experts use this data to 
+          re-train and refine the machine learning models  (Gelvan, “Data Engines.”; Nyckel, “9 Ways to Use a Data Engine to Improve Your 
+          ML Model.”).</li>
+        <li class="endnote" id="e11">This information is sourced from Rishabh Arora, a writer for Medium. He is a masters student studying Data Science at Monash 
+          University. Since most of his references are outdated and are a mixture of blog posts and research papers, he is not a strong 
+          source. Although his technical explanations align with Tesla AI Day 2022, his Autopilot product analysis is likely missing key 
+          information (Arora, “How Big Data Fuels Tesla’s Self-Driven Cars.”; “Tesla AI Day 2022 - YouTube.”).</li>
+        <li class="endnote" id="e12">Imitation learning is a machine learning method where a model learns optimal behaviors by mimicking expert decisions. Tesla 
+          employs this technique in its path planning component by feeding it a dataset of correct human driving decisions, enabling it to 
+          replicate these choices in various scenarios (Arora, “How Big Data Fuels Tesla’s Self-Driven Cars.”; AI, “A Brief Overview of 
+          Imitation Learning.”).</li>
+        <li class="endnote" id="e13">Tesla’s fleet has 1.3 million vehicles (Mathilde Carlier, 2023). Waymo’s fleet has less than 1000 vehicles (Bigad Shaban, 2023).</li>
+        <li class="endnote" id="e14">For more information, see “Tesla AI Day 2022 - YouTube.”, specifically “FSD | Simulation” segment at timestamp 1:47:45.</li>
+        <li class="endnote" id="e15">Data augmentation is the process of altering the display and presentation of data without changing its underlying contents. 
+          Image and video augmentation techniques include: rotation, cropping, mirroring, color shifting, and duplication 
+          (Waymo, “Waypoint - The Official Waymo Blog: Using automated data augmentation to advance our Waymo Driver”).</li>
+        <li class="endnote" id="e16">To access this dataset, see Waymo, “Open Dataset.”</li>
+        <li class="endnote" id="e17">“Lidar, or Light Detection and Ranging, paints a 3D picture of the vehicle’s surroundings at all times of the day. Lidar sensors 
+          are located all around the vehicle and send millions of laser pulses in all directions, measuring how long it takes for them to 
+          bounce back off objects.” (Waymo, 2023).</li>
+        <li class="endnote" id="e18">“Radar uses millimeter wave frequencies to provide the Waymo Driver with crucial details like an object’s relative distance and 
+          speed. Radar is effective in rain, fog, and snow.” (Waymo, 2023). </li>
+      </ol>
+    </div>
+    <h1 style="text-align: center;">Bibliography</h1>
+    <div class="bibliography">
 
-    <footer class="bg-dark text-center text-sm-start">
-      <div class="container d-flex justify-content-center py-5">
-        <button type="button" class="btn">
-          <a href="https://github.com/daynreoh" target="_blank">
-            <img src="../resources/img/github_logo.png" width="40px">
-          </a>
-        </button>
-        <button type="button" class="btn">
-          <a href="https://instagram.com/daynreoh" target="_blank">
-            <img src="../resources/img/instagram_logo.png" width="40px">
-          </a>
-        </button>
-        <button type="button" class="btn">
-          <a href="https://linkedin.com/in/daynreoh/" target="_blank">
-            <img src="../resources/img/linkedin_logo.png" width="40px">
-          </a>
-        </button>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>

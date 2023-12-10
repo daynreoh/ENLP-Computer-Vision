@@ -1,0 +1,113 @@
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-right: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.25em;
+    color: grey;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.image {
+    width: 800px; /* or you could use a percentage */
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+p {
+    line-height: 1.15;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.essay {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    word-spacing: normal;
+}
+
+/* .endnotes {
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-indent: -0.5;
+    margin: auto;
+    max-width: 960px;
+}
+
+.endnote {
+    margin-bottom: 2.0em;
+} */
+
+.lists {
+    margin-left: 50px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Endnotes Section */
+.endnotes {
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.25; /* Double spacing */
+    text-indent: -0.5in; /* First line indentation */
+    margin-left: 0.5in;
+    list-style-type: decimal; /* Ensure the list is numbered */
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Individual Endnote */
+.endnote {
+    display: block;
+    margin-bottom: 2.0em;
+}
+
+/* Numbering for Each Endnote */
+.endnote:before {
+    content: counter(endnote-counter) ". ";
+    counter-increment: endnote-counter;
+    text-indent: 0.3in;
+    margin-left: 0.5in;
+    display: inline-block;
+    width: 0.5in;
+}
+
+/* Initialize Counter */
+.endnotes {
+    counter-reset: endnote-counter;
+}
+
